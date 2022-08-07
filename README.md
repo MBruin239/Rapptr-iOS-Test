@@ -8,6 +8,8 @@
 
 - I upped the iOS deployment target to iOS 13 becuase there was no minimum iOS given and I didn't want to work around not having the SceneDelegate.
 
+- I did the web calls in 3 differnt ways. Chat I did the way I typically architect web requests, login was kept closer to how it was initially setup, and the avatar image was just done in view.
+
 - I used [Gifu](https://github.com/kaishin/gifu) as my CocoaPod becuase I wanted somthing extra to go with the fade out/in functionality.
 
 

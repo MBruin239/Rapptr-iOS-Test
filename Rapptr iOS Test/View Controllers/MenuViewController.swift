@@ -29,14 +29,25 @@ class MenuViewController: UIViewController {
      */
     
     // MARK: - Outlets
-    @IBOutlet weak var chatButton: UIButton!
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var animationButton: UIButton!
+    @IBOutlet weak var chatButton: CustomButton!
+    @IBOutlet weak var loginButton: CustomButton!
+    @IBOutlet weak var animationButton: CustomButton!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Coding Tasks"
+        
+        chatButton.cornerRadius = 8
+        loginButton.cornerRadius = 8
+        animationButton.cornerRadius = 8
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        title = "Coding Tasks"
+        
     }
     
     // MARK: - Actions

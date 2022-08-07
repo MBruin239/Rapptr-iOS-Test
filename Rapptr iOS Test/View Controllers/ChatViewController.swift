@@ -22,7 +22,7 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
      **/
     
     // MARK: - Properties
-    private var client: ChatClient?
+    var viewModel: ChatViewModel!
     private var messages: [Message]?
     
     // MARK: - Outlets
@@ -32,22 +32,27 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.topItem?.title = " "
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor : UIColor.white,
+                                                            .font : UIFont.systemFont(ofSize: 17.0, weight: .semibold)]
+        
+        chatTable.rowHeight = UITableView.automaticDimension
+        chatTable.estimatedRowHeight = 100
+        
         messages = [Message]()
         configureTable(tableView: chatTable)
         title = "Chat"
         
-        // TODO: Remove test data when we have actual data from the server loaded
-        messages?.append(Message(testName: "James", withTestMessage: "Hey Guys!"))
-        messages?.append(Message(testName:"Paul", withTestMessage:"What's up?"))
-        messages?.append(Message(testName:"Amy", withTestMessage:"Hey! :)"))
-        messages?.append(Message(testName:"James", withTestMessage:"Want to grab some food later?"))
-        messages?.append(Message(testName:"Paul", withTestMessage:"Sure, time and place?"))
-        messages?.append(Message(testName:"Amy", withTestMessage:"YAS! I am starving!!!"))
-        messages?.append(Message(testName:"James", withTestMessage:"1 hr at the Local Burger sound good?"))
-        messages?.append(Message(testName:"Paul", withTestMessage:"Sure thing"))
-        messages?.append(Message(testName:"Amy", withTestMessage:"See you there :P"))
+        let service = ChatClient()
+        viewModel = ChatViewModel.init(service: service)
         
-        chatTable.reloadData()
+        viewModel.chat.onUpdate = { [weak self] _ in
+            self?.messages = self?.viewModel.chat.value
+            self?.chatTable.reloadData()
+        }
+
+        viewModel.fetchData()
+            
     }
     
     // MARK: - Private
@@ -71,11 +76,6 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messages!.count
-    }
-    
-    // MARK: - UITableViewDelegate
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 58.0
     }
     
     // MARK: - IBAction

@@ -21,7 +21,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let menuViewController = MenuViewController(nibName: "MenuViewController", bundle: nil)
         let navigationController = UINavigationController(rootViewController: menuViewController)
         
+        // To change background colour.
+        UINavigationBar.appearance().barTintColor = UIColor.init(named: "Header Background")
+        
+        UINavigationBar.appearance().frame = CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 64)
+
+        // To change colour of tappable items.
+        UINavigationBar.appearance().tintColor = .white
+
+        // To apply textAttributes to title i.e. colour, font etc.
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor : UIColor.white,
+                                                            .font : UIFont.systemFont(ofSize: 17.0, weight: .semibold)]
+        // To control navigation bar's translucency.
+        UINavigationBar.appearance().isTranslucent = false
+
         window.rootViewController = navigationController
+        window.backgroundColor = UIColor.init(named: "Header Background")
         
         self.window = window
         window.makeKeyAndVisible()

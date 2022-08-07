@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		717F74A4289C380800D6347B /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F74A3289C380800D6347B /* ChatViewModel.swift */; };
+		717F74A6289C381E00D6347B /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F74A5289C381E00D6347B /* Variable.swift */; };
+		717F74AA28A0011200D6347B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F74A928A0011200D6347B /* CustomButton.swift */; };
+		717F74BB28A014B500D6347B /* wow.gif in Resources */ = {isa = PBXBuildFile; fileRef = 717F74BA28A014B500D6347B /* wow.gif */; };
+		717F74BE28A0199700D6347B /* wow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 717F74BD28A0199700D6347B /* wow.mp3 */; };
 		E9414DB726C45CF300512A71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9414DB626C45CF300512A71 /* AppDelegate.swift */; };
 		E9414DC026C45CF400512A71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9414DBF26C45CF400512A71 /* Assets.xcassets */; };
 		E9414DC326C45CF400512A71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9414DC126C45CF400512A71 /* LaunchScreen.storyboard */; };
@@ -24,9 +29,19 @@
 		E9414DE726C4618900512A71 /* AnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9414DDF26C4618900512A71 /* AnimationViewController.xib */; };
 		E9414DE826C4618900512A71 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9414DE026C4618900512A71 /* MenuViewController.swift */; };
 		E9414DEA26C468D700512A71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9414DE926C468D700512A71 /* SceneDelegate.swift */; };
+		F609A89A658DD458B3EA9DC8 /* Pods_Rapptr_iOS_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095716B8D23755D8B60717C4 /* Pods_Rapptr_iOS_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		095716B8D23755D8B60717C4 /* Pods_Rapptr_iOS_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rapptr_iOS_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D67227326B30D19B6F9808 /* Pods-Rapptr iOS Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rapptr iOS Test.debug.xcconfig"; path = "Target Support Files/Pods-Rapptr iOS Test/Pods-Rapptr iOS Test.debug.xcconfig"; sourceTree = "<group>"; };
+		5349114419E2E901176182C6 /* Pods-Rapptr iOS Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rapptr iOS Test.release.xcconfig"; path = "Target Support Files/Pods-Rapptr iOS Test/Pods-Rapptr iOS Test.release.xcconfig"; sourceTree = "<group>"; };
+		717F74A3289C380800D6347B /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		717F74A5289C381E00D6347B /* Variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
+		717F74A928A0011200D6347B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		717F74AB28A00BA100D6347B /* FLAnimatedImage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FLAnimatedImage; path = Pods/FLAnimatedImage; sourceTree = "<group>"; };
+		717F74BA28A014B500D6347B /* wow.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wow.gif; sourceTree = "<group>"; };
+		717F74BD28A0199700D6347B /* wow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wow.mp3; sourceTree = "<group>"; };
 		E9414DB326C45CF300512A71 /* Rapptr iOS Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rapptr iOS Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9414DB626C45CF300512A71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9414DBF26C45CF400512A71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,17 +68,63 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F609A89A658DD458B3EA9DC8 /* Pods_Rapptr_iOS_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C35CD27936C2B0392D77203 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26D67227326B30D19B6F9808 /* Pods-Rapptr iOS Test.debug.xcconfig */,
+				5349114419E2E901176182C6 /* Pods-Rapptr iOS Test.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		717F74B928A013C900D6347B /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				717F74BA28A014B500D6347B /* wow.gif */,
+			);
+			path = Gifs;
+			sourceTree = "<group>";
+		};
+		717F74BC28A0196F00D6347B /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				717F74BD28A0199700D6347B /* wow.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		71D2325C28A0241000A04DA9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				717F74B928A013C900D6347B /* Gifs */,
+				717F74BC28A0196F00D6347B /* Audio */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D73A31F80A16CCE2F1ACE7AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				717F74AB28A00BA100D6347B /* FLAnimatedImage */,
+				095716B8D23755D8B60717C4 /* Pods_Rapptr_iOS_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E9414DAA26C45CF300512A71 = {
 			isa = PBXGroup;
 			children = (
 				E9414DB526C45CF300512A71 /* Rapptr iOS Test */,
 				E9414DB426C45CF300512A71 /* Products */,
+				D73A31F80A16CCE2F1ACE7AB /* Frameworks */,
+				2C35CD27936C2B0392D77203 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +145,7 @@
 				E9414DCF26C45F9500512A71 /* Clients */,
 				E9414DCC26C45ECD00512A71 /* Models */,
 				E9414DD826C4618900512A71 /* View Controllers */,
+				71D2325C28A0241000A04DA9 /* Sources */,
 				E9414DBF26C45CF400512A71 /* Assets.xcassets */,
 				E9414DC126C45CF400512A71 /* LaunchScreen.storyboard */,
 				E9414DC426C45CF400512A71 /* Info.plist */,
@@ -104,6 +166,8 @@
 			children = (
 				E9414DCD26C45F9200512A71 /* LoginClient.swift */,
 				E9414DD026C460A600512A71 /* ChatClient.swift */,
+				717F74A3289C380800D6347B /* ChatViewModel.swift */,
+				717F74A5289C381E00D6347B /* Variable.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -112,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				E9414DD326C4617B00512A71 /* Cells */,
+				717F74A928A0011200D6347B /* CustomButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -147,15 +212,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9414DC726C45CF400512A71 /* Build configuration list for PBXNativeTarget "Rapptr iOS Test" */;
 			buildPhases = (
+				2CE46B9625B92AC8D104737D /* [CP] Check Pods Manifest.lock */,
 				E9414DAF26C45CF300512A71 /* Sources */,
 				E9414DB026C45CF300512A71 /* Frameworks */,
 				E9414DB126C45CF300512A71 /* Resources */,
+				3704E4C5BB882C2EAE96DE82 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Rapptr iOS Test";
+			packageProductDependencies = (
+			);
 			productName = "Rapptr iOS Test";
 			productReference = E9414DB326C45CF300512A71 /* Rapptr iOS Test.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +252,8 @@
 				Base,
 			);
 			mainGroup = E9414DAA26C45CF300512A71;
+			packageReferences = (
+			);
 			productRefGroup = E9414DB426C45CF300512A71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -197,6 +268,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				717F74BE28A0199700D6347B /* wow.mp3 in Resources */,
+				717F74BB28A014B500D6347B /* wow.gif in Resources */,
 				E9414DC326C45CF400512A71 /* LaunchScreen.storyboard in Resources */,
 				E9414DE426C4618900512A71 /* MenuViewController.xib in Resources */,
 				E9414DD726C4617B00512A71 /* ChatTableViewCell.xib in Resources */,
@@ -209,11 +282,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CE46B9625B92AC8D104737D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rapptr iOS Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3704E4C5BB882C2EAE96DE82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rapptr iOS Test/Pods-Rapptr iOS Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rapptr iOS Test/Pods-Rapptr iOS Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rapptr iOS Test/Pods-Rapptr iOS Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E9414DAF26C45CF300512A71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				717F74AA28A0011200D6347B /* CustomButton.swift in Sources */,
 				E9414DD126C460A600512A71 /* ChatClient.swift in Sources */,
 				E9414DE126C4618900512A71 /* ChatViewController.swift in Sources */,
 				E9414DCE26C45F9200512A71 /* LoginClient.swift in Sources */,
@@ -221,8 +337,10 @@
 				E9414DCB26C45EC900512A71 /* Message.swift in Sources */,
 				E9414DEA26C468D700512A71 /* SceneDelegate.swift in Sources */,
 				E9414DD626C4617B00512A71 /* ChatTableViewCell.swift in Sources */,
+				717F74A6289C381E00D6347B /* Variable.swift in Sources */,
 				E9414DE226C4618900512A71 /* AnimationViewController.swift in Sources */,
 				E9414DB726C45CF300512A71 /* AppDelegate.swift in Sources */,
+				717F74A4289C380800D6347B /* ChatViewModel.swift in Sources */,
 				E9414DE626C4618900512A71 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,17 +477,19 @@
 		};
 		E9414DC826C45CF400512A71 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26D67227326B30D19B6F9808 /* Pods-Rapptr iOS Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDR2J889F7;
 				INFOPLIST_FILE = "Rapptr iOS Test/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rapptrlabs.Rapptr-iOS-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mbruin.Rapptr-iOS-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -378,17 +498,19 @@
 		};
 		E9414DC926C45CF400512A71 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5349114419E2E901176182C6 /* Pods-Rapptr iOS Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TDR2J889F7;
 				INFOPLIST_FILE = "Rapptr iOS Test/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rapptrlabs.Rapptr-iOS-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mbruin.Rapptr-iOS-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
